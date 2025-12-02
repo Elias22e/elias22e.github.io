@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PLANTO - TEC LTD</title>
+<style>
+    body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        color: #1d1d1d;
+        background: #f4f4f4;
+    }
+    h1, h2, h3 {
+        margin: 0;
+        font-weight: 700;
+    }
+    section {
+        padding: 80px 10%;
+        position: relative;
+        overflow: hidden;
+    }
+    /* Polygonal background */
+    .poly-bg::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('https://polygonpattern.com/img/polygon-background.jpg');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.15;
+        z-index: 0;
+    }
+    .content {
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Hero */
+    #hero {
+        text-align: center;
+        padding-top: 140px;
+        padding-bottom: 140px;
+        background: linear-gradient(135deg, #0d1b2a, #1b263b);
+        color: #ffffff;
+    }
+    #hero h1 {
+        font-size: 56px;
+        letter-spacing: 1px;
+    }
+    #hero p {
+        max-width: 800px;
+        margin: 20px auto 40px;
+        font-size: 20px;
+        line-height: 1.6;
+        opacity: 0.9;
+    }
+    #hero img {
+        width: 240px;
+        height: 240px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-top: 20px;
+        border: 4px solid #ffffff;
+    }
+    .btn {
+        display: inline-block;
+        padding: 14px 32px;
+        background: #00a8e8;
+        color: white;
+        font-size: 18px;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: 0.3s;
+        margin-top: 25px;
+    }
+    .btn:hover {
+        background: #0077b6;
+    }
+
+    /* Cards */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+    }
+    .card {
+        background: white;
+        padding: 25px;
+        border-radius: 14px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    }
+
+    /* Contact Section */
+    #contact {
+        background: linear-gradient(135deg, #0d1b2a, #415a77);
+        color: white;
+        text-align: center;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    #contact-form {
+        margin-top: 40px;
+        width: 100%;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        background: rgba(255,255,255,0.1);
+        padding: 25px;
+        border-radius: 12px;
+    }
+    #contact-form input, #contact-form textarea {
+        width: 100%;
+        padding: 12px;
+        border-radius: 6px;
+        border: none;
+        margin-top: 10px;
+    }
+    #contact-form button {
+        width: 100%;
+        margin-top: 18px;
+        padding: 14px;
+        background: #00a8e8;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    #contact-form button:hover {
+        background: #0077b6;
+    }
+
+    /* Footer */
+    footer {
+        background: #0d1b2a;
+        padding: 25px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- 1. MAIN HERO -->
+<section id="hero">
+    <div class="content">
+        <h1>PLANTO - TEC LTD</h1>
+        <p>
+            Insight-driven data strategies, robust digital security, and tailored software consultancy 
+            designed to strengthen decision-making and streamline operations.  
+            We help companies build reliable data ecosystems that support long-term growth and innovation.
+        </p>
+        <a href="#contact" class="btn">Contacts</a>
+        <br>
+        <img src="https://plus.unsplash.com/premium_photo-1682431922475-a0dd6ba340a7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fGNvbXB1dGVyfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" alt="Hero Image">
+    </div>
+</section>
+
+<!-- 2. ABOUT US -->
+<section class="poly-bg" id="about">
+    <div class="content">
+        <h2>Who We Are</h2>
+        <p style="margin-top:20px; max-width:900px; line-height:1.7;">
+            PLANTO - TEC LTD is a consultancy firm specializing in data-centered technological solutions
+            for businesses that rely on accuracy, security, and scalable digital processes. We translate
+            complex datasets into actionable strategies, ensuring companies have the insights they need 
+            to operate confidently. Our team integrates cybersecurity practices directly into the data workflow,
+            creating holistic frameworks rather than temporary fixes. With a deep focus on optimization,
+            integrity, and compliance, we help organizations modernize their infrastructure without disrupting
+            daily operations.
+        </p>
+    </div>
+</section>
+
+<!-- 3. SERVICES -->
+<section class="poly-bg" id="services">
+    <div class="content">
+        <h2>What We Deliver</h2>
+        <div class="cards">
+
+            <div class="card">
+                <h3>Data Consulting</h3>
+                <p>
+                    We build structured data environments, develop analytical systems, and create 
+                    tailored metrics that reveal operational insights. Our consulting ensures you make 
+                    fast, evidence-based decisions supported by clean and reliable data.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Data Security & Protection</h3>
+                <p>
+                    We analyze your entire digital ecosystem, identify vulnerabilities, and implement 
+                    modern protection frameworks. From encryption policies to access governance, we 
+                    strengthen your organization against evolving cyber threats.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Software & IT Consulting</h3>
+                <p>
+                    We help companies upgrade or re-engineer their software architecture to improve 
+                    performance and scalability. Our goal is to ensure that your digital tools work 
+                    harmoniously and support long-term business objectives.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- 4. ADVANTAGES -->
+<section class="poly-bg" id="advantages">
+    <div class="content">
+        <h2>Why Businesses Choose Us</h2>
+        <div class="cards">
+
+            <div class="card">
+                <h3>Deep Technical Expertise</h3>
+                <p>
+                    Our specialists combine data engineering, cybersecurity, and software architecture
+                    knowledge to deliver integrated, future-ready solutions rather than isolated services.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Tailored Strategic Approach</h3>
+                <p>
+                    We dive into the unique structure of your company to build solutions that address
+                    real-world challenges, ensuring scalability and measurable impact on operations.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Reliable & Transparent Workflow</h3>
+                <p>
+                    Every stage of the collaboration is documented, explained, and aligned with your 
+                    internal processes. We guarantee predictable delivery and clear communication.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- 5. PROCESS -->
+<section class="poly-bg" id="process">
+    <div class="content">
+        <h2>How We Work</h2>
+        <div class="cards">
+
+            <div class="card">
+                <h3>1. Initial Audit</h3>
+                <p>
+                    We analyze your existing data systems, security posture, and digital workflows 
+                    to identify gaps and opportunities for optimization.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>2. Strategy & Architecture</h3>
+                <p>
+                    Based on the audit, we design a clear roadmap that outlines structural upgrades, 
+                    security enhancements, and performance improvements.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>3. Implementation & Support</h3>
+                <p>
+                    Our team deploys the agreed solutions, integrates them into your ecosystem,
+                    and provides ongoing support to ensure continuous stability and growth.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- 6. CONTACT -->
+<section id="contact">
+    <div class="content">
+        <h2>Get in Touch</h2>
+        <p style="margin-top:20px; max-width:900px; margin-left:auto; margin-right:auto; line-height:1.7;">
+            We're ready to help you strengthen your digital systems and unlock the full value of your data.  
+            Reach out via email — our team responds quickly and provides fully tailored recommendations  
+            based on your needs.
+        </p>
+
+        <p style="margin-top:10px; font-size:18px;">
+            <strong>Email:</strong> contact@planto-tec.biz<br>
+            <strong>Address:</strong> Koulountis Court, Floor 2, Flat 201, 21 Neofytou Nikolaidi, Paphos, 8011
+        </p>
+
+        <div id="contact-form">
+            <h3>Send us a message</h3>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Email">
+            <textarea rows="4" placeholder="Message"></textarea>
+            <button>Submit</button>
+        </div>
+    </div>
+</section>
+
+<!-- 8. FOOTER -->
+<footer>
+    © 2025 PLANTO - TEC LTD. All rights reserved.
+</footer>
+
+</body>
+</html>
